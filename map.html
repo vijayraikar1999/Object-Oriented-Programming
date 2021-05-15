@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_02ad48ebdace4944a6277ed0209fb5c0 {
+                #map_cc01e95db59845d084e15c11cc604775 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,15 +35,15 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_02ad48ebdace4944a6277ed0209fb5c0" ></div>
+            <div class="folium-map" id="map_cc01e95db59845d084e15c11cc604775" ></div>
         
 </body>
 <script>    
     
-            var map_02ad48ebdace4944a6277ed0209fb5c0 = L.map(
-                "map_02ad48ebdace4944a6277ed0209fb5c0",
+            var map_cc01e95db59845d084e15c11cc604775 = L.map(
+                "map_cc01e95db59845d084e15c11cc604775",
                 {
-                    center: [40.09, 3.47],
+                    center: [40.4, -3.47],
                     crs: L.CRS.EPSG3857,
                     zoom: 10,
                     zoomControl: true,
@@ -55,9 +55,28 @@
 
         
     
-            var tile_layer_d10e0433436542489c7be526b5f10443 = L.tileLayer(
+            var tile_layer_c1a5abf39a864255a5730316eb859bc9 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_02ad48ebdace4944a6277ed0209fb5c0);
+            ).addTo(map_cc01e95db59845d084e15c11cc604775);
         
+    
+            var marker_12b5b095b2fd4a80b5363fa8fffa8798 = L.marker(
+                [40.4, -3.47],
+                {}
+            ).addTo(map_cc01e95db59845d084e15c11cc604775);
+        
+    
+        var popup_7e34b4be45ba4300910c4fccf6ee7e31 = L.popup({"maxWidth": 400});
+
+        
+            var html_b5dfcb6745ff4bea87b2a90401588c30 = $(`<div id="html_b5dfcb6745ff4bea87b2a90401588c30" style="width: 100.0%; height: 100.0%;">  09h: 58.03°F <img src="https://openweathermap.org/img/wn/03d@2x.png" width="35"> <hr style="margin: 1px;"> 12h: 67.86°F <img src="https://openweathermap.org/img/wn/04d@2x.png" width="35"> <hr style="margin: 1px;"> 15h: 78.37°F <img src="https://openweathermap.org/img/wn/04d@2x.png" width="35"> <hr style="margin: 1px;"> 18h: 75.81°F <img src="https://openweathermap.org/img/wn/04d@2x.png" width="35"> <hr style="margin: 1px;"> </div>`)[0];
+            popup_7e34b4be45ba4300910c4fccf6ee7e31.setContent(html_b5dfcb6745ff4bea87b2a90401588c30);
+        
+
+        marker_12b5b095b2fd4a80b5363fa8fffa8798.bindPopup(popup_7e34b4be45ba4300910c4fccf6ee7e31)
+        ;
+
+        
+    
 </script>
